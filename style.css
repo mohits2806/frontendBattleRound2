@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,15 +13,8 @@
     --bg-color: snow;
 }
 
-hr{
-    width: 100%;
-    height: 1rem;
-    margin: 1rem 0;
-    border: 1px solid #33333350;
-}
-
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: "Baloo 2", sans-serif;
     background-color: var(--bg-color);
 }
 
@@ -253,4 +248,257 @@ footer a{
 
 footer a:hover{
     text-decoration: none;
+}
+
+/* Style the tab */
+.tabbar {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabbar button {
+    font-size: 1.3rem;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tabbar button:hover {
+background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tabbar button.active {
+background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent h3{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.tabcontent ul{
+    margin: 1rem;
+    font-size: 1.3rem;
+}
+
+.tabcontent a{
+    font-weight: bold;
+}
+
+.tabcontent a:hover{
+    text-decoration: none;
+}
+
+.tabcontent iframe{
+    width: 100%;
+    border: 2px solid #33333350;
+    border-radius: 20px;
+    box-shadow: 5px 5px 60px #00000050, inset -5px -5px 60px #ffffff50;
+}
+
+
+
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px){
+    main{
+        width: 97%;
+    }
+    
+    header h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3rem;
+    }
+    
+    header h1 strong{
+        font-size: 1.8rem;
+    }
+    
+    header p{
+        font-size: .8rem;
+    }
+    
+    h2{
+        font-size: 1.2rem;
+    }
+    
+    .container h2{
+        margin-top: 1rem;
+    }
+    
+    .tab{
+        margin: .2rem;
+        flex-direction: column-reverse;
+    }
+
+    .tabSide{
+        margin: .2rem;
+        flex-direction: column;
+    }
+    
+    .tab p{
+        font-size: 1rem;
+        width: 90%;
+    }
+    
+    .tab img{
+        height: 200px;
+        width: 200px;
+    }
+    
+    #msg{
+        padding: 2.2rem 1.5rem;
+        width: 100%;
+    }
+    
+    .box{
+        flex-direction: column;
+    }
+    
+    .card{
+        width: 98%;
+    }
+    
+    .card img{
+        height: 300px;
+        width: 300px;
+    }
+    
+    .card h3{
+        font-size: 1.1rem;
+    }
+    
+    .card p{
+        font-size: 1rem;
+    }
+    
+    .card a{
+        font-size: 1.1rem;
+    }
+    
+    .card:hover{
+        transform: none
+    }
+    
+    .area{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: 1rem;
+    }
+    
+    .area p{
+        width: 90%;
+    }
+    
+    .area a{
+        font-size: 1.1rem;
+    }
+    
+    .area a:hover{
+        background: rgb(82, 82, 255);
+    }
+    
+    #geico{
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 20px;
+        box-shadow: 5px 5px 60px #00000050, inset -5px -5px 60px #ffffff50;
+        border: 2px solid #33333350; 
+    }
+    
+    #geico img{
+        margin-bottom: 1rem;
+    }
+    
+    #geico p{
+        margin-bottom: .3rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    /* Style the tab */
+    .tabbar {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+    
+    /* Style the buttons that are used to open the tab content */
+    .tabbar button {
+        font-size: 1.3rem;
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tabbar button:hover {
+    background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tabbar button.active {
+    background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+    display: none;
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    }
+    
+    .tabcontent h3{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .tabcontent ul{
+        margin: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    .tabcontent a{
+        font-weight: bold;
+    }
+    
+    .tabcontent a:hover{
+        text-decoration: none;
+    }
+
+    .tabcontent iframe{
+        width: 100%;
+        height: 200px;
+    }
 }
